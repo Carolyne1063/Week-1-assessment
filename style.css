@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+.navigation a{
+    position: relative;
+    color:hsl(233, 8%, 79%);
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.grid-container{
+    display: grid;
+    padding: 1.25rem;
+    padding-top: o;
+    grid-template-areas: 
+    'w w n'
+    'h p n'
+    'b1 b2 b3'; 
+    
+}
+
+.element{
+    width:700px ;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sub-element{
+    display:flex;
+    flex-direction: row;
+}
+
+.web-3-desktop{
+grid-area: w;
+}
+
+.heading{
+    grid-area: h;
+}
+
+.paragraph{
+    color: gray;
+    font-size: 15px;
+    grid-area: p;
+    margin-bottom: 1rem;
+}
+
+.button{
+    background: hsl(5, 85%, 63%);
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-weight: 400;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+}
+
+.new-column-content{
+    grid-area: n;
+    background-color: hsl(240, 100%, 5%);
+}
+.b1{
+    grid-area: b1; 
+    margin-top: 30px;
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.25rem;
+}
+
+.b2{
+    grid-area: b2; 
+    margin-top: 20px;
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.25rem;
+}
+
+.b3{
+    grid-area: b3;
+    margin-top: 30px; 
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.25rem;
+}
+
